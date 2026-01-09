@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+.navbar {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact {
+  background: orange;
+  border: none;
+    padding: 20px 40px;
+  cursor: pointer;
+}
+
+.nav-content{
+    border: rgb(77, 77, 77) solid 0.2px ;
+    border-radius: 3px;
+}
+
+@font-face {
+    font-family: bootsrap-icons;
+    src: url("./Fonts/bootstrap-icons.woff2") format("woff2"),
+         url("./Fonts/bootstrap-icons.woff") format("woff");
+}
+
+@font-face {
+    font-family: boxicons;
+    src: url("./Fonts/boxicons.woff2") format("woff2"),
+         url("./Fonts/boxicons.woff") format("woff");
+}
+
+@font-face {
+    font-family: rgexSg;
+    src: url("./Fonts/xn7gYHE41ni1AdIRggexSg.woff2") format("woff2"),
+         url("./Fonts/xn7gYHE41ni1AdIRggexSg.woff") format("woff");
+}
+
+@font-face {
+    font-family: rgex2;
+    src: url("./Fonts/xn7gYHE41ni1AdIRggSxSuXd.woff2") format("woff2"),
+         url("./Fonts/xn7gYHE41ni1AdIRggSxSuXd.woff") format("woff");
+}
+
+body{
+    font-family: 'rgexSg', sans-serif;
+}
+
+.heroButton{
+    @apply bg-orange-400 text-white text-sm py-2 px-6 rounded-full hover:bg-orange-500 transition-all duration-300;
+}
+
+.heroSection{
+    @apply flex w-full h-full bg-zinc-900/30 p-10 items-end ;
+}
+
+
+:root {
+  --font-scale: 1;
+  --letter-spacing: 0px;
+  --line-height: 1.5;
+  --brightness: 1;
+}
+
+body {
+  font-size: calc(1rem * var(--font-scale));
+  letter-spacing: var(--letter-spacing);
+  line-height: var(--line-height);
+  filter: brightness(var(--brightness));
+}
+
+/* Color controls */
+.grayscale {
+  filter: grayscale(1);
+}
+
+.invert {
+  filter: invert(1);
+}
+
+/* Images */
+.hide-images img {
+  display: none !important;
+}
+
+/* Stop animations */
+.stop-animations * {
+  animation: none !important;
+  transition: none !important;
+}

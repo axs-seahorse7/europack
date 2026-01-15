@@ -1,0 +1,23 @@
+{
+  "badge": "Services",
+  "title": "Together we design the future of industrial production",
+  "cta": "Learn more",
+  "cards": {
+    "01": {
+      "title": "Design & Studies",
+      "description": "Europack offers comprehensive design solutions..."
+    },
+    "02": {
+      "title": "Technical Support",
+      "description": "In order to ensure the smooth operation of..."
+    },
+    "03": {
+      "title": "Periodic Check",
+      "description": "We provide periodic inspection and maintenance services..."
+    },
+    "04": {
+      "title": "Innovation & Upgrades",
+      "description": "Through targeted visits to international exhibitions..."
+    }
+  }
+}

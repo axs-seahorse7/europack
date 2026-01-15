@@ -1,5 +1,10 @@
 import {useState} from 'react'
 import Sections from '../../../components/Sections.jsx'
+import About from './About.jsx'
+import Services from './Service.jsx'
+import RepresentationsCarousel from './Representation.jsx'
+import Discription from './Discription.jsx'
+import Contact from './Contact.jsx'
 
 const Home = () => {
     const [bg, setBg] = useState("/images/hero_slider_filter_02-scaled.webp");
@@ -43,8 +48,16 @@ const Home = () => {
 
   return (
     <div>
-        <Sections bgImage={bg}>
-            <section className="relative h-full w-full grid grid-cols-3 bg-gradient-to-b from-black/70 via-black/5 to-black/5">
+        <Sections>
+            <section
+            style={{
+            backgroundImage: `url(${bg})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            transition: 'background-image 0.8s ease-in-out',
+            }}  
+            className="relative w-full h-screen grid grid-cols-3 bg-gradient-to-b from-black/70 via-black/5 to-black/5"
+            >
 
                 {/* COLUMN 1 */}
                 <div
@@ -56,25 +69,25 @@ const Home = () => {
                 className="heroSection flex items-end p-10"
                 >
                     <div>
-                        <button style={styles.button(active === "company")}>
-                        Company
-                        </button>
+                    <button style={styles.button(active === "company")}>
+                    Company
+                    </button>
 
-                        <p style={styles.title(active === "company")}>
-                        Supporting the Manufacturing Industries in Greece Since 1972
-                        </p>
+                    <p style={styles.title(active === "company")}>
+                    Supporting the Manufacturing Industries in Greece Since 1972
+                    </p>
 
-                        <p style={styles.desc(active === "company")}>
-                        Europack offers comprehensive packaging solutions,
-                        </p>
+                    <p style={styles.desc(active === "company")}>
+                    Europack offers comprehensive packaging solutions,
+                    </p>
                     </div>
                 </div>
 
                 {/* COLUMN 2 */}
                 <div
                 onMouseEnter={() => {
-                    setBg("/images/hero_slider_filter_02-scaled.webp");
-                    setActive("service");
+                setBg("/images/hero_slider_filter_02-scaled.webp");
+                setActive("service");
                 }}
                 onMouseLeave={() => setActive(null)}
                 className="heroSection flex items-end p-10"
@@ -97,8 +110,8 @@ const Home = () => {
                 {/* COLUMN 3 */}
                 <div
                 onMouseEnter={() => {
-                    setBg("/images/hero_slider_filter_03-scaled.webp");
-                    setActive("representations");
+                setBg("/images/hero_slider_filter_03-scaled.webp");
+                setActive("representations");
                 }}
                 onMouseLeave={() => setActive(null)}
                 className="heroSection flex items-end p-10"
@@ -124,20 +137,17 @@ const Home = () => {
                 <div className="pointer-events-none absolute top-0 left-2/3 h-full w-px bg-gradient-to-b from-white/5 via-white/30 to-white/90" />
 
             </section>
-        </Sections>
 
 
+            <About />
+            <Services />
+            <RepresentationsCarousel />
+            <Discription />
+            <Contact />
 
-        <Sections  >
-            this is the hero
-        </Sections>
-        <Sections  >
-            this is the hero
-        </Sections>
-        <Sections  >
-            this is the hero
         </Sections>
        
+
     </div>
   )
 }

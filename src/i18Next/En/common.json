@@ -1,0 +1,13 @@
+{
+  "sections": {
+    "representations": "Representations"
+  },
+  "titles": {
+    "reliableQuality": "Reliable quality!"
+  },
+  "filters": {
+    "manufacturing": "Product Production & Packaging",
+    "quality": "Quality control",
+    "supply": "Supply Chain"
+  }
+}

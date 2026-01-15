@@ -1,0 +1,53 @@
+.logo-track {
+  animation: scroll-left 5s linear infinite;
+}
+
+.logo-item {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.9;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.logo-item:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+.logo-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.logo-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 80s linear infinite;
+}
+
+.logo-wrapper:hover .logo-track {
+  animation-play-state: paused;
+}
+
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

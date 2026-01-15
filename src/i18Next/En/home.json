@@ -1,0 +1,19 @@
+{
+  "hero": {
+    "columns": {
+      "company": {
+        "badge": "Company",
+        "title": "Supporting the Manufacturing Industry in Greece since 1972",
+        "description": "Europack offers equipment and extensive support"
+      },
+      "services": {
+        "badge": "Services",
+        "title": "Design, Support, Inspection, Innovation"
+      },
+      "representations": {
+        "badge": "Representations",
+        "title": "Solutions for the manufacturing and packaging industries"
+      }
+    }
+  }
+}

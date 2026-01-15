@@ -1,12 +1,13 @@
 export default function Navbar() {
   return (
     <header className="navbar px-5">
-        <div className="nav-left px-3 bg-white/10 h-full flex items-center">
+
+        <div className="nav-left px-3 bg-white/15 backdrop-opacity-10 h-full flex items-center  ">
           <img src="/images/Plain.Europack.Logo_.white_.png" alt="Logo" className="h-8" />
         </div>
-      <div className="nav-content flex px-2 justify-between items-center h-full w-[95%] ">
+      <div className="nav-content border border-white/40 border-l-0 flex px-2 py-1 justify-between items-center h-full w-[95%] ">
 
-        <nav className="nav-center flex items-center gap-5 px-6 uppercase text-sm">
+        <nav className="nav-center  flex items-center gap-5 px-6 uppercase text-sm">
 
           <a className="outline outline-1 cursor-pointer outline-transparent hover:outline-white rounded-full px-3 py-1 transition">
             Company
@@ -77,7 +78,7 @@ export default function Navbar() {
             EN 
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
           </button>
-          <button className="contact">Contact ↗</button>
+          <button className="contact">CONTACT ↗</button>
         </div>
       </div>
     </header>

@@ -1,0 +1,23 @@
+{
+  "badge": "About us",
+  "title": "Supply, Design and Support of Industrial Production & Packaging Equipment",
+  "description": {
+    "line1": "50+ years supporting the future of manufacturing",
+    "line2": "Upgrading Production, Transforming Efficiency"
+  },
+  "cta": "Learn more",
+  "stats": {
+    "experience": {
+      "value": "50+",
+      "label": "Years of Experience"
+    },
+    "staff": {
+      "value": "20+",
+      "label": "Staff"
+    },
+    "installations": {
+      "value": "120+",
+      "label": "Installations per year"
+    }
+  }
+}

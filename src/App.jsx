@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
-import SmoothScroll from './helper/SmoothScroller';
+import {Route, Routes} from 'react-router-dom';   
 import { snapScroll } from './helper/SnapScroll';
-import Sections from './components/Sections';
-import Home from './Pages/Sections-Contents/Home/home';
 import Layout from './Layout/Layout';
+import Home from './Pages/Sections-Contents/Home/home';
+import Company from './Pages/Sections-Contents/Company/Company';
 
 
 function App() {
@@ -16,12 +16,14 @@ function App() {
 
   return (
    <div>
-    <SmoothScroll>
       <Layout>
-        <Home />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/company' element={<Company />} />
+        </Routes>
+        
       </Layout>
-    </SmoothScroll>
-
+    {/* <Accessibility /> */}
    </div>
   );
 }

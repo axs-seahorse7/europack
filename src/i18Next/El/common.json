@@ -1,0 +1,13 @@
+{
+  "sections": {
+    "representations": "Αντιπροσωπείες"
+  },
+  "titles": {
+    "reliableQuality": "Αξιόπιστη ποιότητα!"
+  },
+  "filters": {
+    "manufacturing": "Παραγωγή & Συσκευασία Προϊόντων",
+    "quality": "Έλεγχος ποιότητας",
+    "supply": "Εφοδιαστική Αλυσίδα"
+  }
+}

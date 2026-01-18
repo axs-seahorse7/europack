@@ -17,13 +17,14 @@ export default function Section({
 
   return (
     <section
-      className="relative w-full overflow-hidden section"
+      className=" relative w-full overflow-hidden section"
       style={{ backgroundColor: color,}}
     >
       {/* Background image layer */}
       {currentBg && (
         <div
           className="
+         
             absolute inset-0
             bg-cover bg-center bg-no-repeat
             transition-opacity duration-700 ease-out

@@ -3,6 +3,10 @@ import { useNavigate } from 'react-router-dom'
 import './Company.css'
 import HeroTemplate from '../../../components/HeroTemplate'
 import InfoTemplate from '../../../components/InfoTemplate'
+import Services from '../Home/Service.jsx'
+import Contact from '../Home/Contact.jsx'
+import OurTeamSection from './OurTeamSection.jsx'
+
 
 const Company = () => {
     const navigate = useNavigate();
@@ -121,21 +125,21 @@ const Company = () => {
         />
 
         {/* ABOUT US SECTION */}
-        <section className="relative w-full bg-[#3a3a3a] text-white border">
+        <section className="relative w-full bg-[#3a3a3a] text-white ">
 
         {/* TOP CONTENT */}
-        <div className="max-w-7xl mx-auto px-16 pt-28 pb-40 grid grid-cols-2 gap-20 items-start min-h-[120vh]">
+        <div className="max-w-7xl  mx-auto  pt-28 pb-40 grid grid-cols-2 gap-20 items-start min-h-[120vh]">
 
             {/* LEFT TEXT */}
-            <div className="flex flex-col gap-8 max-w-xl">
+            <div className="flex flex-col gap-8 w-2xl ">
 
             {/* Pill */}
-            <span className="inline-block w-fit px-4 py-1 border border-white/40 rounded-full text-xs tracking-wide">
+            <span className="inline-block w-fit px-4 py-1 border border-white/40 rounded-full text-xl tracking-wide">
                 About Us
             </span>
 
             {/* Paragraphs */}
-            <p className="text-3xl leading-relaxed font-light">
+            <p className="text-4xl leading-relaxed font-medium">
                 Our team's strong technical expertise and extensive industrial
                 experience have enabled us to collaborate with companies that offer
                 innovative and technologically advanced solutions.
@@ -150,9 +154,9 @@ const Company = () => {
             </div>
 
             {/* RIGHT IMAGE */}
-            <div className="absolute bottom-0 right-10 w-[33%] h-[85vh] border z-10 ">
+            <div className="absolute bottom-0 right-5 w-[40%] h-[110vh]  z-10 ">
                 <img
-                    src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76"
+                    src="/images/Company-logos/about_img_jpg.webp"
                     alt=""
                     className="w-full h-full object-cover"
                 />
@@ -197,9 +201,50 @@ const Company = () => {
 
         </div>
 
+
         </section>
+         <InfoTemplate 
+            bgColor='orange-400'
+            image="/images/about_mission_section_img_02_jpg.webp"
+            heading='Supply, Design and Support of Industrial Production & Packaging Equipment'
+            description={<>With a specialized and well-developed technical support department <span className='font-semibold'>Europack Industrial Solutions</span> goes beyond standard servicing. We design complete production lines and installations and offer high-level consultancy services to our clients</>}
+        />
 
+        <section className="w-full bg-white h-screen flex items-end ">
+            <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                
+                {/* LEFT : Image */}
+                <div className="flex justify-center md:justify-start box-border h-[80vh] ">
+                    <img
+                        src="/images/founder.webp"   // replace with your image path
+                        alt="CEO"
+                        className="  border border-red-400 object-fill "
+                    />
+                </div>
 
+                {/* RIGHT : Quote */}
+                <div>
+                <p className="text-3xl md:text-4xl leading-relaxed font-light text-gray-900">
+                    “At Europack I.S., we don’t just sell equipment —  
+                    we transfer technical knowledge and support  
+                    our customers at every step, before and after installation.”
+                </p>
+
+                <div className="mt-8">
+                    <p className="font-bold text-gray-900">
+                    Alexandros Paraskevaidis
+                    </p>
+                    <p className="text-sm text-gray-900 tracking-wide">
+                    Company CEO
+                    </p>
+                </div>
+                </div>
+
+            </div>
+            </section>
+            <Services />
+            <OurTeamSection />
+            <Contact />
     </div>
   )
 }

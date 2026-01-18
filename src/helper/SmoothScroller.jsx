@@ -3,19 +3,19 @@ import Lenis from "@studio-freight/lenis";
 
 export default function SmoothScroll({ children }) {
   const wrapperRef = useRef(null);
+  const contentRef = useRef(null);
 
   useEffect(() => {
-    const lenis = new Lenis({
-      wrapper: wrapperRef.current,   // ✅ scoped
-      content: wrapperRef.current,   // ✅ scoped
-      duration: 1.0,
-      smoothWheel: true,
-      
-      easing: (t) => 1 - Math.pow(1 - t, 3),
-    });
+    // 🛑 SAFETY CHECK
+    if (!wrapperRef.current || !contentRef.current) return;
 
-    lenis.on("scroll", ({ velocity }) => {
-      lenis.options.wheelMultiplier = velocity < 0 ? 1.6 : 1.2;
+    const lenis = new Lenis({
+      wrapper: wrapperRef.current,
+      content: contentRef.current,
+      duration: 0.8,
+      smoothWheel: true,
+      wheelMultiplier: 2,
+      easing: (t) => 1 - Math.pow(1 - t, 3),
     });
 
     function raf(time) {
@@ -29,7 +29,9 @@ export default function SmoothScroll({ children }) {
 
   return (
     <div ref={wrapperRef} className="lenis-wrapper">
-      {children}
+      <div ref={contentRef} className="lenis-content">
+        {children}
+      </div>
     </div>
   );
 }

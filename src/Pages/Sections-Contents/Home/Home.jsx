@@ -56,7 +56,7 @@ const Home = () => {
             backgroundPosition: 'center',
             transition: 'background-image 0.8s ease-in-out',
             }}  
-            className="relative w-full h-screen grid grid-cols-3 bg-gradient-to-b from-black/70 via-black/5 to-black/5"
+            className=" relative w-full h-screen grid grid-cols-3 bg-gradient-to-b from-black/70 via-black/5 to-black/5"
             >
 
                 {/* COLUMN 1 */}

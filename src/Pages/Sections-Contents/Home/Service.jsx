@@ -27,7 +27,7 @@ export default function Services() {
 
           {/* CARD 01 */}
           <div className="bg-white">
-            <div className="px-4 py-14">
+            <div className="px-4 py-15">
               <h3 className="font-semibold mb-3">
                 DESIGN & ENGINEERING
                 <br />
@@ -49,7 +49,7 @@ export default function Services() {
 
           {/* CARD 02 */}
           <div className="bg-white ">
-            <div className="px-4 py-14">
+            <div className="px-4 py-18">
               <h3 className="font-semibold mb-3">
                 TECHNICAL SUPPORT
               </h3>
@@ -69,7 +69,7 @@ export default function Services() {
 
           {/* CARD 03 */}
           <div className="bg-white ">
-            <div className="px-4 py-14">
+            <div className="px-4 py-15">
               <h3 className="font-semibold mb-3">
                 PERIODIC INSPECTION &
                 <br />
@@ -91,7 +91,7 @@ export default function Services() {
 
           {/* CARD 04 */}
           <div className="bg-white ">
-            <div className="px-4 py-14">
+            <div className="px-4 py-18">
               <h3 className="font-semibold mb-3">
                 INNOVATION & UPGRADES
               </h3>

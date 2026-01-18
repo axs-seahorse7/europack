@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom'
+
 export default function Navbar() {
   return (
     <header className="navbar px-5">
@@ -9,11 +11,11 @@ export default function Navbar() {
 
         <nav className="nav-center  flex items-center gap-5 px-6 uppercase text-sm">
 
-          <a className="outline outline-1 cursor-pointer outline-transparent hover:outline-white rounded-full px-3 py-1 transition">
+          <a href='/company' className="outline outline-1 cursor-pointer outline-transparent hover:outline-white rounded-full px-3 py-1 transition">
             Company
           </a>
 
-          <a className="outline outline-1 cursor-pointer outline-transparent hover:outline-white rounded-full px-3 py-1 transition">
+          <a href='/services' className="outline outline-1 cursor-pointer outline-transparent hover:outline-white rounded-full px-3 py-1 transition">
             Services
           </a>
 

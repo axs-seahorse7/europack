@@ -1,0 +1,106 @@
+/* MAIN LAYOUT */
+.article-wrapper {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 60px;
+}
+
+/* LEFT */
+.article-left h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.article-meta {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.article-subtitle {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.article-content {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #000000;
+}
+
+/* RIGHT */
+.article-right {
+  position: relative;
+}
+
+.side-image img {
+  width: 100%;
+  display: block;
+  background: #f2f6fb;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+/* FOOTER */
+.article-footer {
+  border-top: 1px solid #eee;
+  margin-top: 80px;
+  padding: 40px 20px;
+}
+
+/* .footer-nav {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+} */
+
+.footer-item .label {
+  font-size: 13px;
+  color: #777;
+}
+
+.footer-item p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 6px;
+}
+
+.footer-item.right {
+  text-align: right;
+}
+
+.footer-center .box-icon {
+  width: 40px;
+  height: 40px;
+  background: orange;
+  display: inline-block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .article-right {
+    margin-top: 40px;
+  }
+
+  .footer-nav {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-item.right {
+    display: flex;
+    text-align: center;
+  }
+}

@@ -1,10 +1,12 @@
 import {Link} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom';
 
 export default function Navbar() {
+  const navigate = useNavigate();
   return (
     <header className="navbar px-5">
 
-        <div className="nav-left px-3 bg-white/15 backdrop-opacity-10 h-full flex items-center  ">
+        <div onClick={() => navigate("/")} className="nav-left px-3 bg-white/15 backdrop-opacity-10 h-full flex items-center  ">
           <img src="/images/Plain.Europack.Logo_.white_.png" alt="Logo" className="h-8" />
         </div>
       <div className="nav-content border border-white/40 border-l-0 flex px-2 py-1 justify-between items-center h-full w-[95%] ">
@@ -67,7 +69,7 @@ export default function Navbar() {
         </div>
 
 
-          <a className="outline outline-1 cursor-pointer outline-transparent hover:outline-white rounded-full px-3 py-1 transition">
+          <a href='/category/news' className="outline outline-1 cursor-pointer outline-transparent hover:outline-white rounded-full px-3 py-1 transition">
             News
           </a>
 

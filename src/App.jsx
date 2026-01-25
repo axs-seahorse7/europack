@@ -27,7 +27,7 @@ function App() {
           <Route path='/services' element={<Services />} />
           <Route path='/category/news' element={<News />} />
           <Route path='/category/news/page2' element={<NewsPage2 />} />
-          <Route path='/αναπτυξη-ανω-του-10-και-φετοσ-με-ωθηση-απ' element={<ArticalLayout />} />
+          <Route path='/:slug' element={<ArticalLayout  />} />
         </Routes>
         
       </Layout>
